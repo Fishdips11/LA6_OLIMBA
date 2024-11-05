@@ -15,16 +15,20 @@ public class LeapYear extends JFrame{
         CheckYearButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            int year = Integer.parseInt((yearTextField.getText()));
-                if(year % 4 == 0) {
-                    if(year % 100 == 0) {
-                        if(year % 400 == 0) {
+                int year = Integer.parseInt(yearTextField.getText());
+                    if (year % 4 == 0) {
+                        if (year % 100 == 0) {
+                            if (year % 400 == 0) {
+                                JOptionPane.showInternalMessageDialog(null, "Leap Year");
+                            } else {
+                                JOptionPane.showInternalMessageDialog(null, "Not a leap year");
+                            }
+                        } else {
                             JOptionPane.showInternalMessageDialog(null, "Leap Year");
                         }
+                    } else {
                         JOptionPane.showInternalMessageDialog(null, "Not a leap year");
                     }
-                    JOptionPane.showInternalMessageDialog(null, "Leap Year");
-                }
             }
         });
     }

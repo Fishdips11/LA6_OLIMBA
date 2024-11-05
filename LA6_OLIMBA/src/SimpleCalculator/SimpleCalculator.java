@@ -11,10 +11,13 @@ public class SimpleCalculator extends JFrame{
     private JButton btnCompute;
     private JTextField lblResult;
     private JPanel MainPanel;
+    private JLabel First;
+    private JLabel Second;
+    private JLabel Result;
 
 
     public SimpleCalculator() {
-        setTitle("Leap Year Checker");
+        setTitle("Simple Calculator");
         btnCompute.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
