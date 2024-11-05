@@ -18,7 +18,7 @@ public class FoodOrderingSystem extends JFrame{
     private JRadioButton rb15;
     private JButton btnOrder;
     private JLabel Food;
-    private JRadioButton[] radioButtons = {rbNone, rb5, rb10, rb15};
+
 
     public FoodOrderingSystem() {
         setTitle("Food Ordering System");
@@ -57,11 +57,4 @@ public class FoodOrderingSystem extends JFrame{
         app.setVisible(true);
     }
 
-    public JRadioButton[] getRadioButtons() {
-        return radioButtons;
-    }
-
-    public void setRadioButtons(JRadioButton[] radioButtons) {
-        this.radioButtons = radioButtons;
-    }
 }
